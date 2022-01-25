@@ -13,7 +13,7 @@ BEGIN:VEVENT
 UID:20220101@chinese-holidays-calendar
 SUMMARY:元旦放假
 DTSTART;VALUE=DATE:20220101
-DTEND;VALUE=DATE:20220104
+DTEND;VALUE=DATE:20220103
 DESCRIPTION:2022年1月1日至3日放假，共3天
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:节假日,Holiday
@@ -24,7 +24,7 @@ BEGIN:VEVENT
 UID:20220131@chinese-holidays-calendar
 SUMMARY:春节放假
 DTSTART;VALUE=DATE:20220131
-DTEND;VALUE=DATE:20220207
+DTEND;VALUE=DATE:20220206
 DESCRIPTION:1月31日至2月6日放假调休，共7天\n1月29日（星期六）、1月30日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:节假日,Holiday
@@ -35,7 +35,6 @@ BEGIN:VEVENT
 UID:20220129@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20220129
-DTEND;VALUE=DATE:20220130
 DESCRIPTION:1月31日至2月6日放假调休，共7天\n1月29日（星期六）、1月30日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:调休,Business Day
@@ -46,7 +45,6 @@ BEGIN:VEVENT
 UID:20220130@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20220130
-DTEND;VALUE=DATE:20220131
 DESCRIPTION:1月31日至2月6日放假调休，共7天\n1月29日（星期六）、1月30日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:调休,Business Day
@@ -57,7 +55,7 @@ BEGIN:VEVENT
 UID:20220403@chinese-holidays-calendar
 SUMMARY:清明节放假
 DTSTART;VALUE=DATE:20220403
-DTEND;VALUE=DATE:20220406
+DTEND;VALUE=DATE:20220405
 DESCRIPTION:4月3日至5日放假调休，共3天\n4月2日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:节假日,Holiday
@@ -68,7 +66,6 @@ BEGIN:VEVENT
 UID:20220402@chinese-holidays-calendar
 SUMMARY:清明节调休
 DTSTART;VALUE=DATE:20220402
-DTEND;VALUE=DATE:20220403
 DESCRIPTION:4月3日至5日放假调休，共3天\n4月2日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:调休,Business Day
@@ -79,7 +76,7 @@ BEGIN:VEVENT
 UID:20220430@chinese-holidays-calendar
 SUMMARY:劳动节放假
 DTSTART;VALUE=DATE:20220430
-DTEND;VALUE=DATE:20220505
+DTEND;VALUE=DATE:20220504
 DESCRIPTION:4月30日至5月4日放假调休，共5天\n4月24日（星期日）、5月7日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:节假日,Holiday
@@ -90,7 +87,6 @@ BEGIN:VEVENT
 UID:20220424@chinese-holidays-calendar
 SUMMARY:劳动节调休
 DTSTART;VALUE=DATE:20220424
-DTEND;VALUE=DATE:20220425
 DESCRIPTION:4月30日至5月4日放假调休，共5天\n4月24日（星期日）、5月7日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:调休,Business Day
@@ -101,7 +97,6 @@ BEGIN:VEVENT
 UID:20220507@chinese-holidays-calendar
 SUMMARY:劳动节调休
 DTSTART;VALUE=DATE:20220507
-DTEND;VALUE=DATE:20220508
 DESCRIPTION:4月30日至5月4日放假调休，共5天\n4月24日（星期日）、5月7日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:调休,Business Day
@@ -112,7 +107,7 @@ BEGIN:VEVENT
 UID:20220603@chinese-holidays-calendar
 SUMMARY:端午节放假
 DTSTART;VALUE=DATE:20220603
-DTEND;VALUE=DATE:20220606
+DTEND;VALUE=DATE:20220605
 DESCRIPTION:6月3日至5日放假，共3天
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:节假日,Holiday
@@ -123,7 +118,7 @@ BEGIN:VEVENT
 UID:20220910@chinese-holidays-calendar
 SUMMARY:中秋节放假
 DTSTART;VALUE=DATE:20220910
-DTEND;VALUE=DATE:20220913
+DTEND;VALUE=DATE:20220912
 DESCRIPTION:9月10日至12日放假，共3天
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:节假日,Holiday
@@ -134,7 +129,7 @@ BEGIN:VEVENT
 UID:20221001@chinese-holidays-calendar
 SUMMARY:国庆节放假
 DTSTART;VALUE=DATE:20221001
-DTEND;VALUE=DATE:20221008
+DTEND;VALUE=DATE:20221007
 DESCRIPTION:10月1日至7日放假调休，共7天\n10月8日（星期六）、10月9日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:节假日,Holiday
@@ -145,7 +140,6 @@ BEGIN:VEVENT
 UID:20221008@chinese-holidays-calendar
 SUMMARY:国庆节调休
 DTSTART;VALUE=DATE:20221008
-DTEND;VALUE=DATE:20221009
 DESCRIPTION:10月1日至7日放假调休，共7天\n10月8日（星期六）、10月9日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:调休,Business Day
@@ -156,7 +150,6 @@ BEGIN:VEVENT
 UID:20221009@chinese-holidays-calendar
 SUMMARY:国庆节调休
 DTSTART;VALUE=DATE:20221009
-DTEND;VALUE=DATE:20221010
 DESCRIPTION:10月1日至7日放假调休，共7天\n10月8日（星期六）、10月9日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
 CATEGORIES:调休,Business Day
@@ -167,7 +160,7 @@ BEGIN:VEVENT
 UID:20210101@chinese-holidays-calendar
 SUMMARY:元旦放假
 DTSTART;VALUE=DATE:20210101
-DTEND;VALUE=DATE:20210104
+DTEND;VALUE=DATE:20210103
 DESCRIPTION:2021年1月1日至3日放假，共3天
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:节假日,Holiday
@@ -178,7 +171,7 @@ BEGIN:VEVENT
 UID:20210211@chinese-holidays-calendar
 SUMMARY:春节放假
 DTSTART;VALUE=DATE:20210211
-DTEND;VALUE=DATE:20210218
+DTEND;VALUE=DATE:20210217
 DESCRIPTION:2月11日至17日放假调休，共7天\n2月7日（星期日）、2月20日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:节假日,Holiday
@@ -189,7 +182,6 @@ BEGIN:VEVENT
 UID:20210207@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20210207
-DTEND;VALUE=DATE:20210208
 DESCRIPTION:2月11日至17日放假调休，共7天\n2月7日（星期日）、2月20日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:调休,Business Day
@@ -200,7 +192,6 @@ BEGIN:VEVENT
 UID:20210220@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20210220
-DTEND;VALUE=DATE:20210221
 DESCRIPTION:2月11日至17日放假调休，共7天\n2月7日（星期日）、2月20日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:调休,Business Day
@@ -211,7 +202,7 @@ BEGIN:VEVENT
 UID:20210403@chinese-holidays-calendar
 SUMMARY:清明节放假
 DTSTART;VALUE=DATE:20210403
-DTEND;VALUE=DATE:20210406
+DTEND;VALUE=DATE:20210405
 DESCRIPTION:4月3日至5日放假调休，共3天
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:节假日,Holiday
@@ -222,7 +213,7 @@ BEGIN:VEVENT
 UID:20210501@chinese-holidays-calendar
 SUMMARY:劳动节放假
 DTSTART;VALUE=DATE:20210501
-DTEND;VALUE=DATE:20210506
+DTEND;VALUE=DATE:20210505
 DESCRIPTION:5月1日至5日放假调休，共5天\n4月25日（星期日）、5月8日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:节假日,Holiday
@@ -233,7 +224,6 @@ BEGIN:VEVENT
 UID:20210425@chinese-holidays-calendar
 SUMMARY:劳动节调休
 DTSTART;VALUE=DATE:20210425
-DTEND;VALUE=DATE:20210426
 DESCRIPTION:5月1日至5日放假调休，共5天\n4月25日（星期日）、5月8日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:调休,Business Day
@@ -244,7 +234,6 @@ BEGIN:VEVENT
 UID:20210508@chinese-holidays-calendar
 SUMMARY:劳动节调休
 DTSTART;VALUE=DATE:20210508
-DTEND;VALUE=DATE:20210509
 DESCRIPTION:5月1日至5日放假调休，共5天\n4月25日（星期日）、5月8日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:调休,Business Day
@@ -255,7 +244,7 @@ BEGIN:VEVENT
 UID:20210612@chinese-holidays-calendar
 SUMMARY:端午节放假
 DTSTART;VALUE=DATE:20210612
-DTEND;VALUE=DATE:20210615
+DTEND;VALUE=DATE:20210614
 DESCRIPTION:6月12日至14日放假，共3天
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:节假日,Holiday
@@ -266,7 +255,7 @@ BEGIN:VEVENT
 UID:20210919@chinese-holidays-calendar
 SUMMARY:中秋节放假
 DTSTART;VALUE=DATE:20210919
-DTEND;VALUE=DATE:20210922
+DTEND;VALUE=DATE:20210921
 DESCRIPTION:9月19日至21日放假调休，共3天\n9月18日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:节假日,Holiday
@@ -277,7 +266,6 @@ BEGIN:VEVENT
 UID:20210918@chinese-holidays-calendar
 SUMMARY:中秋节调休
 DTSTART;VALUE=DATE:20210918
-DTEND;VALUE=DATE:20210919
 DESCRIPTION:9月19日至21日放假调休，共3天\n9月18日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:调休,Business Day
@@ -288,7 +276,7 @@ BEGIN:VEVENT
 UID:20211001@chinese-holidays-calendar
 SUMMARY:国庆节放假
 DTSTART;VALUE=DATE:20211001
-DTEND;VALUE=DATE:20211008
+DTEND;VALUE=DATE:20211007
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月26日（星期日）、10月9日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:节假日,Holiday
@@ -299,7 +287,6 @@ BEGIN:VEVENT
 UID:20210926@chinese-holidays-calendar
 SUMMARY:国庆节调休
 DTSTART;VALUE=DATE:20210926
-DTEND;VALUE=DATE:20210927
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月26日（星期日）、10月9日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:调休,Business Day
@@ -310,7 +297,6 @@ BEGIN:VEVENT
 UID:20211009@chinese-holidays-calendar
 SUMMARY:国庆节调休
 DTSTART;VALUE=DATE:20211009
-DTEND;VALUE=DATE:20211010
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月26日（星期日）、10月9日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
 CATEGORIES:调休,Business Day
@@ -321,7 +307,6 @@ BEGIN:VEVENT
 UID:20200101@chinese-holidays-calendar
 SUMMARY:元旦放假
 DTSTART;VALUE=DATE:20200101
-DTEND;VALUE=DATE:20200102
 DESCRIPTION:2020年1月1日放假，共1天
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:节假日,Holiday
@@ -332,7 +317,7 @@ BEGIN:VEVENT
 UID:20200124@chinese-holidays-calendar
 SUMMARY:春节放假
 DTSTART;VALUE=DATE:20200124
-DTEND;VALUE=DATE:20200131
+DTEND;VALUE=DATE:20200130
 DESCRIPTION:1月24日至30日放假调休，共7天\n1月19日（星期日）、2月1日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:节假日,Holiday
@@ -343,7 +328,6 @@ BEGIN:VEVENT
 UID:20200119@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20200119
-DTEND;VALUE=DATE:20200120
 DESCRIPTION:1月24日至30日放假调休，共7天\n1月19日（星期日）、2月1日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:调休,Business Day
@@ -354,7 +338,6 @@ BEGIN:VEVENT
 UID:20200201@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20200201
-DTEND;VALUE=DATE:20200202
 DESCRIPTION:1月24日至30日放假调休，共7天\n1月19日（星期日）、2月1日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:调休,Business Day
@@ -365,7 +348,7 @@ BEGIN:VEVENT
 UID:20200404@chinese-holidays-calendar
 SUMMARY:清明节放假
 DTSTART;VALUE=DATE:20200404
-DTEND;VALUE=DATE:20200407
+DTEND;VALUE=DATE:20200406
 DESCRIPTION:4月4日至6日放假调休，共3天
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:节假日,Holiday
@@ -376,7 +359,7 @@ BEGIN:VEVENT
 UID:20200501@chinese-holidays-calendar
 SUMMARY:劳动节放假
 DTSTART;VALUE=DATE:20200501
-DTEND;VALUE=DATE:20200506
+DTEND;VALUE=DATE:20200505
 DESCRIPTION:5月1日至5日放假调休，共5天\n4月26日（星期日）、5月9日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:节假日,Holiday
@@ -387,7 +370,6 @@ BEGIN:VEVENT
 UID:20200426@chinese-holidays-calendar
 SUMMARY:劳动节调休
 DTSTART;VALUE=DATE:20200426
-DTEND;VALUE=DATE:20200427
 DESCRIPTION:5月1日至5日放假调休，共5天\n4月26日（星期日）、5月9日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:调休,Business Day
@@ -398,7 +380,6 @@ BEGIN:VEVENT
 UID:20200509@chinese-holidays-calendar
 SUMMARY:劳动节调休
 DTSTART;VALUE=DATE:20200509
-DTEND;VALUE=DATE:20200510
 DESCRIPTION:5月1日至5日放假调休，共5天\n4月26日（星期日）、5月9日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:调休,Business Day
@@ -409,7 +390,7 @@ BEGIN:VEVENT
 UID:20200625@chinese-holidays-calendar
 SUMMARY:端午节放假
 DTSTART;VALUE=DATE:20200625
-DTEND;VALUE=DATE:20200628
+DTEND;VALUE=DATE:20200627
 DESCRIPTION:6月25日至27日放假调休，共3天\n6月28日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:节假日,Holiday
@@ -420,7 +401,6 @@ BEGIN:VEVENT
 UID:20200628@chinese-holidays-calendar
 SUMMARY:端午节调休
 DTSTART;VALUE=DATE:20200628
-DTEND;VALUE=DATE:20200629
 DESCRIPTION:6月25日至27日放假调休，共3天\n6月28日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:调休,Business Day
@@ -431,7 +411,7 @@ BEGIN:VEVENT
 UID:20201001@chinese-holidays-calendar
 SUMMARY:国庆节、中秋节放假
 DTSTART;VALUE=DATE:20201001
-DTEND;VALUE=DATE:20201009
+DTEND;VALUE=DATE:20201008
 DESCRIPTION:10月1日至8日放假调休，共8天\n9月27日（星期日）、10月10日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:节假日,Holiday
@@ -442,7 +422,6 @@ BEGIN:VEVENT
 UID:20200927@chinese-holidays-calendar
 SUMMARY:国庆节、中秋节调休
 DTSTART;VALUE=DATE:20200927
-DTEND;VALUE=DATE:20200928
 DESCRIPTION:10月1日至8日放假调休，共8天\n9月27日（星期日）、10月10日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:调休,Business Day
@@ -453,7 +432,6 @@ BEGIN:VEVENT
 UID:20201010@chinese-holidays-calendar
 SUMMARY:国庆节、中秋节调休
 DTSTART;VALUE=DATE:20201010
-DTEND;VALUE=DATE:20201011
 DESCRIPTION:10月1日至8日放假调休，共8天\n9月27日（星期日）、10月10日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
 CATEGORIES:调休,Business Day
@@ -464,7 +442,7 @@ BEGIN:VEVENT
 UID:20181230@chinese-holidays-calendar
 SUMMARY:元旦放假
 DTSTART;VALUE=DATE:20181230
-DTEND;VALUE=DATE:20190102
+DTEND;VALUE=DATE:20190101
 DESCRIPTION:2018年12月30日至2019年1月1日放假调休，共3天\n2018年12月29日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:节假日,Holiday
@@ -475,7 +453,6 @@ BEGIN:VEVENT
 UID:20181229@chinese-holidays-calendar
 SUMMARY:元旦调休
 DTSTART;VALUE=DATE:20181229
-DTEND;VALUE=DATE:20181230
 DESCRIPTION:2018年12月30日至2019年1月1日放假调休，共3天\n2018年12月29日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:调休,Business Day
@@ -486,7 +463,7 @@ BEGIN:VEVENT
 UID:20190204@chinese-holidays-calendar
 SUMMARY:春节放假
 DTSTART;VALUE=DATE:20190204
-DTEND;VALUE=DATE:20190211
+DTEND;VALUE=DATE:20190210
 DESCRIPTION:2月4日至10日放假调休，共7天\n2月2日（星期六）、2月3日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:节假日,Holiday
@@ -497,7 +474,6 @@ BEGIN:VEVENT
 UID:20190202@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20190202
-DTEND;VALUE=DATE:20190203
 DESCRIPTION:2月4日至10日放假调休，共7天\n2月2日（星期六）、2月3日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:调休,Business Day
@@ -508,7 +484,6 @@ BEGIN:VEVENT
 UID:20190203@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20190203
-DTEND;VALUE=DATE:20190204
 DESCRIPTION:2月4日至10日放假调休，共7天\n2月2日（星期六）、2月3日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:调休,Business Day
@@ -519,7 +494,6 @@ BEGIN:VEVENT
 UID:20190405@chinese-holidays-calendar
 SUMMARY:清明节放假
 DTSTART;VALUE=DATE:20190405
-DTEND;VALUE=DATE:20190406
 DESCRIPTION:4月5日放假，与周末连休
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:节假日,Holiday
@@ -530,7 +504,6 @@ BEGIN:VEVENT
 UID:20190501@chinese-holidays-calendar
 SUMMARY:劳动节放假
 DTSTART;VALUE=DATE:20190501
-DTEND;VALUE=DATE:20190502
 DESCRIPTION:5月1日放假，undefined
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:节假日,Holiday
@@ -541,7 +514,6 @@ BEGIN:VEVENT
 UID:20190607@chinese-holidays-calendar
 SUMMARY:端午节放假
 DTSTART;VALUE=DATE:20190607
-DTEND;VALUE=DATE:20190608
 DESCRIPTION:6月7日放假，与周末连休
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:节假日,Holiday
@@ -552,7 +524,6 @@ BEGIN:VEVENT
 UID:20190913@chinese-holidays-calendar
 SUMMARY:中秋节放假
 DTSTART;VALUE=DATE:20190913
-DTEND;VALUE=DATE:20190914
 DESCRIPTION:9月13日放假，与周末连休
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:节假日,Holiday
@@ -563,7 +534,7 @@ BEGIN:VEVENT
 UID:20191001@chinese-holidays-calendar
 SUMMARY:国庆节放假
 DTSTART;VALUE=DATE:20191001
-DTEND;VALUE=DATE:20191008
+DTEND;VALUE=DATE:20191007
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月29日（星期日）、10月12日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:节假日,Holiday
@@ -574,7 +545,6 @@ BEGIN:VEVENT
 UID:20190929@chinese-holidays-calendar
 SUMMARY:国庆节调休
 DTSTART;VALUE=DATE:20190929
-DTEND;VALUE=DATE:20190930
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月29日（星期日）、10月12日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:调休,Business Day
@@ -585,7 +555,6 @@ BEGIN:VEVENT
 UID:20191012@chinese-holidays-calendar
 SUMMARY:国庆节调休
 DTSTART;VALUE=DATE:20191012
-DTEND;VALUE=DATE:20191013
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月29日（星期日）、10月12日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2018-12/06/content_5346276.htm
 CATEGORIES:调休,Business Day
@@ -596,7 +565,6 @@ BEGIN:VEVENT
 UID:20180101@chinese-holidays-calendar
 SUMMARY:元旦放假
 DTSTART;VALUE=DATE:20180101
-DTEND;VALUE=DATE:20180102
 DESCRIPTION:1月1日放假，与周末连休
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:节假日,Holiday
@@ -607,7 +575,7 @@ BEGIN:VEVENT
 UID:20180215@chinese-holidays-calendar
 SUMMARY:春节放假
 DTSTART;VALUE=DATE:20180215
-DTEND;VALUE=DATE:20180222
+DTEND;VALUE=DATE:20180221
 DESCRIPTION:2月15日至21日放假调休，共7天\n2月11日（星期日）、2月24日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:节假日,Holiday
@@ -618,7 +586,6 @@ BEGIN:VEVENT
 UID:20180211@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20180211
-DTEND;VALUE=DATE:20180212
 DESCRIPTION:2月15日至21日放假调休，共7天\n2月11日（星期日）、2月24日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:调休,Business Day
@@ -629,7 +596,6 @@ BEGIN:VEVENT
 UID:20180224@chinese-holidays-calendar
 SUMMARY:春节调休
 DTSTART;VALUE=DATE:20180224
-DTEND;VALUE=DATE:20180225
 DESCRIPTION:2月15日至21日放假调休，共7天\n2月11日（星期日）、2月24日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:调休,Business Day
@@ -640,7 +606,7 @@ BEGIN:VEVENT
 UID:20180405@chinese-holidays-calendar
 SUMMARY:清明节放假
 DTSTART;VALUE=DATE:20180405
-DTEND;VALUE=DATE:20180408
+DTEND;VALUE=DATE:20180407
 DESCRIPTION:4月5日至7日放假调休，共3天\n4月8日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:节假日,Holiday
@@ -651,7 +617,6 @@ BEGIN:VEVENT
 UID:20180408@chinese-holidays-calendar
 SUMMARY:清明节调休
 DTSTART;VALUE=DATE:20180408
-DTEND;VALUE=DATE:20180409
 DESCRIPTION:4月5日至7日放假调休，共3天\n4月8日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:调休,Business Day
@@ -662,7 +627,7 @@ BEGIN:VEVENT
 UID:20180429@chinese-holidays-calendar
 SUMMARY:劳动节放假
 DTSTART;VALUE=DATE:20180429
-DTEND;VALUE=DATE:20180502
+DTEND;VALUE=DATE:20180501
 DESCRIPTION:4月29日至5月1日放假调休，共3天\n4月28日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:节假日,Holiday
@@ -673,7 +638,6 @@ BEGIN:VEVENT
 UID:20180428@chinese-holidays-calendar
 SUMMARY:劳动节调休
 DTSTART;VALUE=DATE:20180428
-DTEND;VALUE=DATE:20180429
 DESCRIPTION:4月29日至5月1日放假调休，共3天\n4月28日（星期六）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:调休,Business Day
@@ -684,7 +648,6 @@ BEGIN:VEVENT
 UID:20180618@chinese-holidays-calendar
 SUMMARY:端午节放假
 DTSTART;VALUE=DATE:20180618
-DTEND;VALUE=DATE:20180619
 DESCRIPTION:6月18日放假，与周末连休
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:节假日,Holiday
@@ -695,7 +658,6 @@ BEGIN:VEVENT
 UID:20180924@chinese-holidays-calendar
 SUMMARY:中秋节放假
 DTSTART;VALUE=DATE:20180924
-DTEND;VALUE=DATE:20180925
 DESCRIPTION:9月24日放假，与周末连休
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:节假日,Holiday
@@ -706,7 +668,7 @@ BEGIN:VEVENT
 UID:20181001@chinese-holidays-calendar
 SUMMARY:国庆节放假
 DTSTART;VALUE=DATE:20181001
-DTEND;VALUE=DATE:20181008
+DTEND;VALUE=DATE:20181007
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月29日（星期六）、9月30日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:节假日,Holiday
@@ -717,7 +679,6 @@ BEGIN:VEVENT
 UID:20180929@chinese-holidays-calendar
 SUMMARY:国庆节调休
 DTSTART;VALUE=DATE:20180929
-DTEND;VALUE=DATE:20180930
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月29日（星期六）、9月30日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:调休,Business Day
@@ -728,7 +689,6 @@ BEGIN:VEVENT
 UID:20180930@chinese-holidays-calendar
 SUMMARY:国庆节调休
 DTSTART;VALUE=DATE:20180930
-DTEND;VALUE=DATE:20181001
 DESCRIPTION:10月1日至7日放假调休，共7天\n9月29日（星期六）、9月30日（星期日）上班
 URL:http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
 CATEGORIES:调休,Business Day
