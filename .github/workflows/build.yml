@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Automated Build
 
 on:
   push:
