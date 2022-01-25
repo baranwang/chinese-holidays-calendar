@@ -31,9 +31,11 @@ jobs:
       - run: node .
 
       - id: diff
-        run: |
-          git diff-index --quiet HEAD -- || echo "::set-output name=has_changes::true"
-          echo "::set-output name=date::$(date +%Y%m%d%H%M%S)"
+        run: git diff-index --quiet HEAD -- || echo "::set-output name=has_changes::true"
+
+      - if: ${{ steps.diff.outputs.has_changes }}
+        id: date
+        run: echo "::set-output name=date::$(date +%Y%m%d%H%M%S)"
 
       - if: ${{ steps.diff.outputs.has_changes }}
         run: |
@@ -46,12 +48,12 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "build: github action auto build at ${{ steps.diff.outputs.date }}"
-          committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          branch: autoupdate/${{ steps.diff.outputs.date }}
+          commit-message: 'build: github action auto build at ${{ steps.date.outputs.date }}'
+          committer: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
+          author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
+          branch: autoupdate/${{ steps.date.outputs.date }}
           delete-branch: true
-          title: "build: github action auto build at ${{ steps.diff.outputs.date }}"
-          body: "build: github action auto build at ${{ steps.diff.outputs.date }}"
+          title: 'build: github action auto build at ${{ steps.date.outputs.date }}'
+          body: 'build: github action auto build at ${{ steps.date.outputs.date }}'
           assignees: baranwang
           reviewers: baranwang
