@@ -2,7 +2,7 @@
 	"name": "chinese-holidays-calendar",
 	"type": "module",
 	"scripts": {
-		"build": "node ."
+		"build": "node --experimental-specifier-resolution=node ."
 	},
 	"dependencies": {
 		"dayjs": "^1.10.7",
