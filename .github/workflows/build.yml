@@ -30,21 +30,21 @@ jobs:
 
       - run: node .
 
-      - id: diff
-        run: git diff-index --quiet HEAD -- || echo "::set-output name=has_changes::true"
+      - id: changed-files
+        uses: tj-actions/changed-files@v3.0.2
 
-      - if: ${{ steps.diff.outputs.has_changes }}
+      - if: steps.changed-files.outputs.any_changed == 'true'
         id: date
         run: echo "::set-output name=date::$(date +%Y%m%d%H%M%S)"
 
-      - if: ${{ steps.diff.outputs.has_changes }}
+      - if: steps.changed-files.outputs.any_changed == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
           git commit -am "build: github action auto build at ${{ steps.diff.outputs.date }}"
 
-      - if: ${{ steps.diff.outputs.has_changes }}
+      - if: steps.changed-files.outputs.any_changed == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
