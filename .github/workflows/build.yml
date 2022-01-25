@@ -35,25 +35,28 @@ jobs:
 
       - if: steps.changed-files.outputs.files_changed == 'true'
         id: date
-        run: echo "::set-output name=date::$(date +%Y%m%d%H%M%S)"
+        run: |
+          echo "::set-output name=number::$(date +%Y%m%d%H%M%S)"
+          echo "::set-output name=text::$(date +'%F %T')"
 
       - if: steps.changed-files.outputs.files_changed == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
-          git commit -am "build: github action auto build at ${{ steps.diff.outputs.date }}"
+          git commit -am "build: github action auto build at ${{ steps.diff.outputs.text }}"
 
       - if: steps.changed-files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'build: github action auto build at ${{ steps.date.outputs.date }}'
+          commit-message: 'build: github action auto build at ${{ steps.date.outputs.text }}'
           committer: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
           author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
-          branch: autoupdate/${{ steps.date.outputs.date }}
+          branch: autoupdate/${{ steps.date.outputs.number }}
           delete-branch: true
-          title: 'build: github action auto build at ${{ steps.date.outputs.date }}'
-          body: 'build: github action auto build at ${{ steps.date.outputs.date }}'
+          title: 'build: github action auto build at ${{ steps.date.outputs.text }}'
+          body: 'build: github action auto build at ${{ steps.date.outputs.text }}'
+          labels: enhancement
           assignees: baranwang
           reviewers: baranwang
