@@ -1,6 +1,9 @@
 {
 	"name": "chinese-holidays-calendar",
 	"type": "module",
+	"scripts": {
+		"build": "node ."
+	},
 	"dependencies": {
 		"dayjs": "^1.10.7",
 		"ics": "^2.35.0",

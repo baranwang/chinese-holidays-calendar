@@ -28,7 +28,7 @@ jobs:
 
       - run: pnpm install
 
-      - run: node .
+      - run: pnpm run build
 
       - id: changed-files
         uses: tj-actions/changed-files@v3.0.2

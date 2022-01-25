@@ -1,3 +1,5 @@
+#!/usr/bin/env node 
+
 import fetch from 'node-fetch';
 import { parse } from 'node-html-parser';
 import * as path from 'path';
@@ -8,7 +10,7 @@ import { writeFileSync } from 'fs';
 
 dayjs.extend(customParseFormat);
 
-const productName = 'chinese-holidays-calendar';
+const productName = process.env.npm_package_name;
 const dateFormat = 'YYYY年M月D日';
 
 const chineseNumberRegExp = new RegExp(
@@ -21,7 +23,7 @@ const chineseNumberRegExp = new RegExp(
  * @param {string} text
  * @param {dayjs.Dayjs} day
  */
-const getDay = (text, day) => {
+const getDayjs = (text, day) => {
   if (!text.includes('月')) {
     return day.clone().date(parseInt(text));
   } else if (!text.includes('年')) {
@@ -65,7 +67,7 @@ const dateToArray = (day) => {
 
   for (const item of list) {
     const year = item.title.replace(new RegExp('[^0-9]', 'ig'), '');
-    const yearDay = dayjs(`${year}年1月1日`, dateFormat);
+    const yearDayjs = dayjs(`${year}年1月1日`, dateFormat);
     const { content, url } = await fetch(item.url).then((res) => res.json());
     const holidayTextList = parse(content)
       .textContent.split(new RegExp('\n|\r'))
@@ -80,8 +82,10 @@ const dateToArray = (day) => {
       const [startDateText, endDateText] = holidayText
         .replace(new RegExp('放假(调休)?'), '')
         .split('至');
-      const startData = getDay(startDateText, yearDay);
-      const endData = endDateText ? getDay(endDateText, startData) : startData;
+      const startData = getDayjs(startDateText, yearDayjs);
+      const endData = endDateText
+        ? getDayjs(endDateText, startData)
+        : startData;
 
       const description = [`${holidayText}，${days}`, changeText]
         .filter((item) => item)
@@ -91,7 +95,7 @@ const dateToArray = (day) => {
         calName: '中国大陆节假日',
         productId:
           '-//BaranWang Spider by The State Council//Mainland China Public Holidays//EN',
-        uid: `holiday-${year}-${index}@${productName}`,
+        uid: `${startData.format('YYYYMMDD')}@${productName}`,
         title: holidayName,
         description,
         start: dateToArray(startData),
@@ -102,30 +106,27 @@ const dateToArray = (day) => {
         url,
       });
 
-      if (changeText) {
-        changeText
-          .replace('上班', '')
-          .split('、')
-          .forEach((item) => {
-            const date = getDay(
-              item.replace(new RegExp('（.*）'), ''),
-              yearDay
-            );
-            events.push({
-              uid: `businessday-${year}-${index}-${date.format(
-                'YYYY-MM-DD'
-              )}@${productName}`,
-              title: `${holidayName}调休`,
-              description,
-              start: dateToArray(date),
-              end: dateToArray(date.add(1, 'day')),
-              classification: 'PUBLIC',
-              busyStatus: 'BUSY',
-              categories: ['调休', 'Business Day'],
-              url,
-            });
+      if (!changeText) return;
+      changeText
+        .replace('上班', '')
+        .split('、')
+        .forEach((item) => {
+          const date = getDayjs(
+            item.replace(new RegExp('（.*）'), ''),
+            yearDayjs
+          );
+          events.push({
+            uid: `${date.format('YYYYMMDD')}@${productName}`,
+            title: `${holidayName}调休`,
+            description,
+            start: dateToArray(date),
+            end: dateToArray(date.add(1, 'day')),
+            classification: 'PUBLIC',
+            busyStatus: 'BUSY',
+            categories: ['调休', 'Business Day'],
+            url,
           });
-      }
+        });
     });
 
     const { error, value } = ics.createEvents(events);
