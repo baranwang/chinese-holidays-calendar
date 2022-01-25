@@ -88,6 +88,7 @@ const dateToArray = (day) => {
         .join('\n');
 
       events.push({
+        calName: '中国大陆节假日',
         productId:
           '-//BaranWang Spider by The State Council//Mainland China Public Holidays//EN',
         uid: `holiday-${year}-${index}@${productName}`,
@@ -95,9 +96,9 @@ const dateToArray = (day) => {
         description,
         start: dateToArray(startData),
         end: dateToArray(endData.add(1, 'day')),
-        startOutputType: 'local',
-        endOutputType: 'local',
+        classification: 'PUBLIC',
         busyStatus: 'FREE',
+        categories: ['节假日', 'Holiday'],
         url,
       });
 
@@ -111,14 +112,16 @@ const dateToArray = (day) => {
               yearDay
             );
             events.push({
-              uid: `workingday-${year}-${index}-${date.format(
+              uid: `businessday-${year}-${index}-${date.format(
                 'YYYY-MM-DD'
               )}@${productName}`,
               title: `${holidayName}调休`,
               description,
               start: dateToArray(date),
               end: dateToArray(date.add(1, 'day')),
+              classification: 'PUBLIC',
               busyStatus: 'BUSY',
+              categories: ['调休', 'Business Day'],
               url,
             });
           });
@@ -134,6 +137,18 @@ const dateToArray = (day) => {
       value
         .split('\n')
         .filter((item) => !item.startsWith('DTSTAMP'))
+        .flatMap((item) => {
+          if (item.startsWith('X-WR-CALNAME')) {
+            return [
+              item,
+              'X-WR-TIMEZONE:Asia/Shanghai',
+              'X-APPLE-LANGUAGE:zh',
+              'X-APPLE-REGION:CN',
+            ];
+          } else {
+            return item;
+          }
+        })
         .join('\n')
     );
   }
