@@ -1,4 +1,4 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 
 import fetch from 'node-fetch';
 import { parse } from 'node-html-parser';
@@ -18,6 +18,16 @@ const chineseNumberRegExp = new RegExp(
     '|'
   )}]{1,}、`
 );
+
+/**
+ * @type {ics.EventAttributes}
+ */
+const eventCommon = {
+  calName: '中国大陆节假日',
+  productId:
+    '-//BaranWang Spider by The State Council//Mainland China Public Holidays//EN',
+  classification: 'PUBLIC',
+};
 
 /**
  * @param {string} text
@@ -81,7 +91,7 @@ const dateToArray = (day) => {
 
       const [startDateText, endDateText] = holidayText
         .replace(new RegExp('放假(调休)?'), '')
-        .split('至');
+        .split(new RegExp('至|—'));
       const startData = getDayjs(startDateText, yearDayjs);
       const endData = endDateText
         ? getDayjs(endDateText, startData)
@@ -92,15 +102,11 @@ const dateToArray = (day) => {
         .join('\n');
 
       events.push({
-        calName: '中国大陆节假日',
-        productId:
-          '-//BaranWang Spider by The State Council//Mainland China Public Holidays//EN',
         uid: `${startData.format('YYYYMMDD')}@${productName}`,
-        title: holidayName,
+        title: `${holidayName}放假`,
         description,
         start: dateToArray(startData),
         end: dateToArray(endData.add(1, 'day')),
-        classification: 'PUBLIC',
         busyStatus: 'FREE',
         categories: ['节假日', 'Holiday'],
         url,
@@ -121,7 +127,6 @@ const dateToArray = (day) => {
             description,
             start: dateToArray(date),
             end: dateToArray(date.add(1, 'day')),
-            classification: 'PUBLIC',
             busyStatus: 'BUSY',
             categories: ['调休', 'Business Day'],
             url,
@@ -129,7 +134,9 @@ const dateToArray = (day) => {
         });
     });
 
-    const { error, value } = ics.createEvents(events);
+    const { error, value } = ics.createEvents(
+      events.map((item) => ({ ...eventCommon, ...item }))
+    );
     if (error) {
       return console.error(error);
     }
