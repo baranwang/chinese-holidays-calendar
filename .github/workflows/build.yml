@@ -1,0 +1,57 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'pnpm'
+
+      - run: pnpm install
+
+      - run: node .
+
+      - id: diff
+        run: |
+          git diff-index --quiet HEAD -- || echo "::set-output name=has_changes::true"
+          echo "::set-output name=date::$(date +%Y%m%d%H%M%S)"
+
+      - if: ${{ steps.diff.outputs.has_changes }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -am "build: github action auto build at ${{ steps.diff.outputs.date }}"
+
+      - if: ${{ steps.diff.outputs.has_changes }}
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "build: github action auto build at ${{ steps.diff.outputs.date }}"
+          committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          branch: autoupdate/${{ steps.diff.outputs.date }}
+          delete-branch: true
+          title: "build: github action auto build at ${{ steps.diff.outputs.date }}"
+          body: "build: github action auto build at ${{ steps.diff.outputs.date }}"
+          assignees: baranwang
+          reviewers: baranwang
