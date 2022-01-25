@@ -1,9 +1,9 @@
 import { productName } from './constants';
-import { dayjsToIcsArray } from './dayjs';
+import { dayjsToIcsArray, dayjs } from './dayjs';
 /**
  *
  * @param {ics.EventAttributes[]} events
- * @param {*} params
+ * @param {{holidayName: string, start: dayjs.Dayjs, end: dayjs.Dayjs, description: string, url: string, isOffDay: boolean}} params
  */
 export const eventsPush = (
   events,
@@ -21,7 +21,7 @@ export const eventsPush = (
     title,
     description,
     start: dayjsToIcsArray(start),
-    end: dayjsToIcsArray(end),
+    end: dayjsToIcsArray(dayjs(end).add(1, 'day')),
     busyStatus,
     categories,
     url,
