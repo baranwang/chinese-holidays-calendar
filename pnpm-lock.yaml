@@ -14,8 +14,8 @@ dependencies:
 
 packages:
 
-  /@babel/runtime/7.16.7:
-    resolution: {integrity: sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==}
+  /@babel/runtime/7.17.2:
+    resolution: {integrity: sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
@@ -107,7 +107,7 @@ packages:
   /ics/2.35.0:
     resolution: {integrity: sha512-uxHoiu9VnE/1RUIWoUqn9GVswUzrejHFa5Gk20gGySw+2FO8xzgJe7GLFk+hzmevHViG/6zANLhjVY6kFWctKQ==}
     dependencies:
-      nanoid: 3.2.0
+      nanoid: 3.3.1
       yup: 0.32.11
     dev: false
 
@@ -123,8 +123,8 @@ packages:
     resolution: {integrity: sha512-wynEP02LmIbLpcYw8uBKpcfF6dmg2vcpKqxeH5UcoKEYdExslsdUA4ugFauuaeYdTB76ez6gJW8XAZ6CgkXYxA==}
     dev: false
 
-  /nanoid/3.2.0:
-    resolution: {integrity: sha512-fmsZYa9lpn69Ad5eDn7FMcnnSR+8R34W9qJEijxYhTbfOWzr22n1QxCMzXLK+ODyW2973V3Fux959iQoUxzUIA==}
+  /nanoid/3.3.1:
+    resolution: {integrity: sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: false
@@ -177,7 +177,7 @@ packages:
     resolution: {integrity: sha512-Z2Fe1bn+eLstG8DRR6FTavGD+MeAwyfmouhHsIUgaADz8jvFKbO/fXc2trJKZg+5EBjh4gGm3iU/t3onKlXHIg==}
     engines: {node: '>=10'}
     dependencies:
-      '@babel/runtime': 7.16.7
+      '@babel/runtime': 7.17.2
       '@types/lodash': 4.14.178
       lodash: 4.17.21
       lodash-es: 4.17.21
