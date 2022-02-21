@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import { parse } from 'node-html-parser';
 import { basename, extname } from 'path';
-import { serialNumberRegExp } from './constants';
+import { serialNumberRegExp } from './constants.js';
 
 export const fetchList = async () => {
   const listHtmlText = await fetch(

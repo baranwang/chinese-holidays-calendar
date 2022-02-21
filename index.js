@@ -7,7 +7,7 @@ import {
   getDayjs,
   createCalendar,
   eventsPush,
-} from './utils';
+} from './utils/index.js';
 
 (async () => {
   /**

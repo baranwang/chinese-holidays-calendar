@@ -1,5 +1,5 @@
-import { productName } from './constants';
-import { dayjsToIcsArray, dayjs } from './dayjs';
+import { productName } from './constants.js';
+import { dayjsToIcsArray, dayjs } from './dayjs.js';
 /**
  *
  * @param {ics.EventAttributes[]} events

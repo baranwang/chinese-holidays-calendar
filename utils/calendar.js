@@ -1,5 +1,5 @@
 import ics from 'ics';
-import { commonEventAttributes } from './constants';
+import { commonEventAttributes } from './constants.js';
 /**
  *
  * @param {ics.EventAttributes[]} events

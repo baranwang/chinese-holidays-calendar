@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat.js';
-import { constants } from './constants';
+import { constants } from './constants.js';
 
 dayjs.extend(customParseFormat);
 
