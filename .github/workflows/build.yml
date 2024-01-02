@@ -28,7 +28,7 @@ jobs:
 
       - run: pnpm run build
 
-      - id: changed-files
+      - id: files_changed
         uses: tj-actions/verify-changed-files@v8.8
         with:
           files: chinese-holidays.ics
